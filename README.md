@@ -131,6 +131,7 @@ MAIN           Depends on the patch notes
 AIM            Improving
 PING           Too high
 EXCUSES        Unlimited
+RANK           IMMORTAL III 278RR
 ```
 
 ---
