@@ -235,11 +235,11 @@ You're **X**. Click a square — GitHub opens a pre-filled issue that casts your
 <!--START_SECTION:ttt-->
 |  |  |  |
 |:-:|:-:|:-:|
-| ❌ | ⭕ | ⭕ |
-| ⭕ | ❌ | ❌ |
-| ❌ | ❌ | ⭕ |
+| [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C0&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%200.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C1&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%201.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C2&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%202.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) |
+| [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C3&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%203.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C4&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%204.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C5&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%205.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) |
+| [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C6&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%206.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C7&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%207.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C8&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%208.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) |
 
-🤝 **Draw.** Honourable. → [start a new game](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cnew&body=Starting%20a%20fresh%20tic-tac-toe%20game.%20Submit%20to%20reset%20the%20board.)
+You're **X** — click a square, a GitHub issue casts your move, the bot answers within ~1 min.
 <!--END_SECTION:ttt-->
 
 ---
