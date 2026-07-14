@@ -76,6 +76,7 @@ status: "The robot was working yesterday."
 ## Shipped
 
 - **[frc-2025-simulation](https://github.com/ggkchen/frc-2025-simulation)** — FRC robot simulation
+- **[bot-slacking-off](https://github.com/ggkchen/bot-slacking-off)** - Slack bot online 24/7 that sends animal pictures and jokes
 - **[krackenmusic](https://github.com/ggkchen/krackenmusic)** — playing music on Kraken motors
 - **[Daydream](https://github.com/ggkchen/Daydream)** — a game, in Godot / GDScript
 - **[gavpad](https://github.com/ggkchen/gavpad)** — custom keyboard / macropad
