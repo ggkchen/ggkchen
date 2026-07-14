@@ -208,6 +208,18 @@ This section fills in once WakaTime is connected and I've logged some coding tim
 </div>
 <!--END_SECTION:contribution-universe-3d-->
 
+## 📊 Metrics
+
+<div align="center">
+
+<!--
+  Rendered by lowlighter/metrics via .github/workflows/metrics.yml.
+  NOTE: this image 404s until the first successful Actions run creates github-metrics.svg.
+-->
+<img src="./github-metrics.svg" alt="GitHub metrics for @ggkchen" width="100%">
+
+</div>
+
 ---
 
 <div align="center">
