@@ -63,7 +63,7 @@ status: "The robot was working yesterday."
 ## In the lab &nbsp;`[ WIP ]`
 
 ```txt
-▸ cable-robot     4-winch robot that flies a claw around a room to grab
+▸ cable-robot     4-winch robot that goes around a claw around a room to grab
                   things — ESP32 + steppers, OpenCV AprilTag closed loop.
 
 ▸ couch-ev        a self-propelled electric couch running a from-scratch
@@ -76,7 +76,7 @@ status: "The robot was working yesterday."
 ## Shipped
 
 - **[frc-2025-simulation](https://github.com/ggkchen/frc-2025-simulation)** — FRC robot simulation
-- **[krackenmusic](https://github.com/ggkchen/krackenmusic)** — playing music on Kraken motors 🎵
+- **[krackenmusic](https://github.com/ggkchen/krackenmusic)** — playing music on Kraken motors
 - **[Daydream](https://github.com/ggkchen/Daydream)** — a game, in Godot / GDScript
 - **[gavpad](https://github.com/ggkchen/gavpad)** — custom keyboard / macropad
 
@@ -85,11 +85,11 @@ status: "The robot was working yesterday."
 ## Current side quests
 
 ```txt
-Robotics       ██████████████░░░░
-Silicon        ██████████░░░░░░░░
-Kotlin         ████████████░░░░░░
+Robotics        ██████████████░░░░
+Silicon         ██████████░░░░░░░░
+Kotlin          ████████████░░░░░░
 Computer Vision ███████████░░░░░░
-Sleep          ██░░░░░░░░░░░░░░░░
+Sleep           ██░░░░░░░░░░░░░░░░
 ```
 
 ## Robot telemetry
