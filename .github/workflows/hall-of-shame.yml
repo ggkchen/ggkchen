@@ -1,0 +1,130 @@
+name: Commit Hall of Shame
+
+on:
+  workflow_dispatch:
+  schedule:
+    # a few times a day (07:17, 13:17, 19:17 UTC) — off-the-hour to dodge cron congestion
+    - cron: '17 7,13,19 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-widgets
+  cancel-in-progress: false
+
+jobs:
+  shame:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pick a commit sin and update README
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            const OWNER = context.repo.owner;
+            const README = 'README.md';
+            const START = '<!--START_SECTION:shame-->';
+            const END = '<!--END_SECTION:shame-->';
+            const MAX_REPOS = 15;
+            const COMMITS_PER_REPO = 30;
+
+            const FUNNY = /fix|please|work|oops|revert|final|actually|test|idk|hmm|wtf|typo|ugh|asdf/i;
+            const NOISE = /^(merge |merge branch|merge pull|initial commit$|update readme|bump |version )/i;
+
+            function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+            const messages = [];
+            try {
+              const repos = await github.paginate(github.rest.repos.listForUser, {
+                username: OWNER,
+                type: 'owner',
+                sort: 'pushed',
+                per_page: 100,
+              });
+              const usable = repos.filter(r => !r.fork && !r.archived).slice(0, MAX_REPOS);
+              for (const repo of usable) {
+                try {
+                  const commits = await github.rest.repos.listCommits({
+                    owner: OWNER,
+                    repo: repo.name,
+                    per_page: COMMITS_PER_REPO,
+                  });
+                  for (const c of commits.data) {
+                    const first = ((c.commit && c.commit.message) || '').split('\n')[0].trim();
+                    if (first) messages.push(first);
+                  }
+                } catch (e) {
+                  core.info('skip repo ' + repo.name + ': ' + e.message);
+                }
+              }
+            } catch (e) {
+              core.warning('repo enumeration failed: ' + e.message);
+            }
+
+            const seed = (context.runNumber || 1) * 2654435761 + (context.runId || 0);
+
+            function pick(msgs, seed) {
+              const clean = msgs
+                .map(m => (m || '').trim())
+                .filter(m => m.length > 0 && !NOISE.test(m));
+              let pool = clean.filter(m => FUNNY.test(m) && m.length <= 100);
+              if (pool.length === 0) pool = clean.filter(m => m.length <= 50);
+              if (pool.length === 0) pool = clean;
+              if (pool.length === 0) return null;
+              const idx = ((seed % pool.length) + pool.length) % pool.length;
+              return pool[idx];
+            }
+
+            const chosen = pick(messages, seed);
+
+            const line = chosen
+              ? '> `' + chosen.replace(/`/g, "'").slice(0, 120) + '`'
+              : '> _(no sins found — suspicious. try harder next commit.)_';
+
+            const block = START + '\n' +
+              line + '\n' +
+              '>\n' +
+              '> a randomly resurfaced sin from my git history\n' +
+              END;
+
+            let content;
+            try {
+              content = fs.readFileSync(README, 'utf8');
+            } catch (e) {
+              core.setFailed('cannot read README.md: ' + e.message);
+              return;
+            }
+
+            const re = new RegExp(esc(START) + '[\\s\\S]*?' + esc(END));
+            if (!re.test(content)) {
+              core.warning('shame markers not found in README.md — nothing to replace.');
+              return;
+            }
+
+            const updated = content.replace(re, block);
+            if (updated === content) {
+              core.info('README already up to date; no change.');
+              return;
+            }
+            fs.writeFileSync(README, updated);
+            core.info('Updated shame section with: ' + (chosen || '(placeholder)'));
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add README.md
+          git commit -m "chore: resurface a commit from the hall of shame" || exit 0
+          git push || {
+            git pull --rebase origin main
+            git push
+          }

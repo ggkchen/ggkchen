@@ -83,6 +83,16 @@ status: "The robot was working yesterday."
 
 ---
 
+## Commit hall of shame
+
+<!--START_SECTION:shame-->
+> `fix (this time for real i promise)`
+>
+> a randomly resurfaced sin from my git history
+<!--END_SECTION:shame-->
+
+---
+
 ## Current side quests
 
 ```txt
@@ -103,10 +113,29 @@ Driver Skill   █████████░ 90%
 Bug Count      ███████████████████████
 ```
 
+## Hardware status
+
+```txt
+Motherboard    Gave mother something to do
+CPU            Overthinking
+RAM            Full
+Storage        Full
+Programmer     Also full
+```
+
+## AI project status
+
+```txt
+Prompt Quality     ████████░░
+Model Accuracy     ███████░░░
+Hallucinations     ██████████
+```
+
 ## Valorant.exe
 
 ```txt
 ROLE     Programmer
+MAIN     Depends on the patch notes
 AIM      Improving
 PING     Too high
 EXCUSES  Unlimited
@@ -120,6 +149,22 @@ RANK     IMMORTAL III · 278RR
 2. Merge conflicts
 3. "It worked yesterday"
 ```
+
+## Favorite error message
+
+```java
+java.lang.NullPointerException
+```
+
+---
+
+## Weekly coding breakdown
+
+_What I've actually been typing this week (auto-updated by WakaTime — Java, Kotlin, and the occasional YAML fight)._
+
+<!--START_SECTION:waka-->
+This section fills in once WakaTime is connected and I've logged some coding time. Check back after the first Action run.
+<!--END_SECTION:waka-->
 
 ---
 
@@ -146,11 +191,44 @@ RANK     IMMORTAL III · 278RR
 </picture>
 </p>
 
+<!--START_SECTION:contribution-universe-3d-->
+## Contribution universe
+
+<div align="center">
+
+<!-- Generated daily by the github-profile-3d-contrib Action. Images 404 until the first run finishes. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg">
+  <img alt="My contributions, rendered as a slightly over-engineered isometric city" src="./profile-3d-contrib/profile-green-animate.svg" width="100%">
+</picture>
+
+<sub>Robots by day, committing by night. Rebuilt daily.</sub>
+
+</div>
+<!--END_SECTION:contribution-universe-3d-->
+
 ---
 
 <div align="center">
 <img src="https://readme-jokes.vercel.app/api?hideBorder&theme=transparent" alt="a programming joke" />
 </div>
+
+---
+
+## 🎮 Play tic-tac-toe against my repo
+
+You're **X**. Click a square — GitHub opens a pre-filled issue that casts your move, and my repo plays back as **O** within about a minute. No account tricks, no build required (unlike most of our robots).
+
+<!--START_SECTION:ttt-->
+|  |  |  |
+|:-:|:-:|:-:|
+| [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C0&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%200.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C1&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%201.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C2&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%202.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) |
+| [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C3&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%203.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C4&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%204.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C5&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%205.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) |
+| [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C6&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%206.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C7&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%207.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) | [&nbsp;⬜&nbsp;](https://github.com/ggkchen/ggkchen/issues/new?title=ttt%7Cmove%7C8&body=Casting%20my%20tic-tac-toe%20move%20as%20X%20on%20cell%208.%20Leave%20the%20title%20as-is%20and%20submit%20%E2%80%94%20the%20bot%20answers%20within%20~1%20min.) |
+
+You're **X** — click a square, a GitHub issue casts your move, the bot answers within ~1 min.
+<!--END_SECTION:ttt-->
 
 ---
 

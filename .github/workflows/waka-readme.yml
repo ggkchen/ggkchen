@@ -1,0 +1,31 @@
+name: WakaTime Weekly Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily at 00:30 UTC
+    - cron: "30 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    name: WakaReadme DevMetrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update README with WakaTime stats
+        uses: athul/waka-readme@v0.3.1
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # Built-in token; sufficient because this is the profile repo (ggkchen/ggkchen).
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SECTION_NAME: "waka"
+          SHOW_TITLE: "true"
+          SHOW_TIME: "true"
+          SHOW_TOTAL: "true"
+          TIME_RANGE: "last_7_days"
+          LANG_COUNT: "6"
+          BLOCKS: "-▁▂▃▄▅▆▇█"
+          CODE_LANG: "txt"
+          STOP_AT_OTHER: "true"
