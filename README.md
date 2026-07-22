@@ -86,7 +86,7 @@ status: "The robot was working yesterday."
 ## Commit hall of shame
 
 <!--START_SECTION:shame-->
-> `added floor to test`
+> `refactor turrettestingSubsystem calculate method for improved readability`
 >
 > a randomly resurfaced sin from my git history
 <!--END_SECTION:shame-->
