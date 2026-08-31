@@ -86,7 +86,7 @@ status: "The robot was working yesterday."
 ## Commit hall of shame
 
 <!--START_SECTION:shame-->
-> `Revert "merging local"`
+> `enhance turrettestingSubsystem with vision targeting and lead calculations`
 >
 > a randomly resurfaced sin from my git history
 <!--END_SECTION:shame-->
