@@ -86,7 +86,7 @@ status: "The robot was working yesterday."
 ## Commit hall of shame
 
 <!--START_SECTION:shame-->
-> `enhance turrettestingSubsystem with vision targeting and lead calculations`
+> `added turrettestingSubsystem for enhanced turret control and motion profiling`
 >
 > a randomly resurfaced sin from my git history
 <!--END_SECTION:shame-->
