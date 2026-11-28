@@ -86,7 +86,7 @@ status: "The robot was working yesterday."
 ## Commit hall of shame
 
 <!--START_SECTION:shame-->
-> `refactor turrettestingSubsystem for enhanced turret control and improved PID parameters`
+> `fix turrettestingSubsystem to use radians for target angle calculation`
 >
 > a randomly resurfaced sin from my git history
 <!--END_SECTION:shame-->
